@@ -1015,4 +1015,7 @@ section, header {
 .sixpic1, .sixpic3, .sixpic2, .sixpic4 {
     height: 250px;
     }
+	.video{
+	height:207px;
+	}
 }
