@@ -17,7 +17,7 @@ width:100%;
     max-width: 1250px;
     margin: 0 auto;
 }
-.button {
+.button{
     background: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
@@ -32,11 +32,21 @@ width:100%;
     line-height: 15px;
     text-align: center;
     cursor:pointer;
+    transition: 0.5s linear;
 }
-
 .bt_no_active {
     background: none;
     border: 1px solid #FFFFFF;
+    transition: 0.5s linear;
+}
+.button:hover{
+    background: #ff9d00;
+    transition: 0.5s linear;
+    color:black;
+}
+.bt_no_active:hover{
+    border: 1px solid #ff9d00;
+    transition: 0.5s linear;
 }
 .logo {
     color:#E3B873;
@@ -62,6 +72,7 @@ width:100%;
 .header-navigation_item a {
     text-decoration: none;
     color: white;
+    transition: 0.5s linear;
 }
 .hero {
     background-image: url('../images/img8.jpg');
@@ -170,6 +181,7 @@ display: flex;
 .header-navigation_item .active, .header-navigation_item a:hover{
     text-decoration: underline;
     color: #E3B873;
+    transition: 0.5s linear;
 }
 .two-container_item {
 width:213px;
@@ -196,6 +208,7 @@ order:1;
     background-size:cover;
     width: 100%;
     height: 100%;
+    display: none;
 }
 .two-container_img2{
     background:url('../images/img15.jpg');
@@ -767,6 +780,9 @@ line-height: 28px;
 .nvg2, .nvg1{
     display:none;
 }
+.twi-block{
+    display: block;
+}
 @media (max-width: 1250px) {
     .nvg2{
         display:block;
@@ -872,8 +888,11 @@ display:none;
 margin-bottom:0;
 margin-top:0;
 }
-.sixpic3, .sixpic2, .sixpic4{
+.sixpic1,.sixpic3, .sixpic2, .sixpic4{
 	display:none;
+}
+.si-block{
+display:block;
 }
 .six .container {
     align-items: center;
